@@ -1,13 +1,14 @@
-const sketchpad = document.querySelector('#sketchpad-container');
+const sketchpad = document.querySelector('.sketchpad');
 
-function createDivs(numberOfDivs) {
-    for (let div = 1; div <= numberOfDivs; div++) {
+function createCells(cells) {
+    for (let div = 1; div <= cells * cells; div++) {
         const square = document.createElement('div');
         
         square.textContent = "hello";
         square.classList.add('cell');
+        square.style.width = `calc(100% / ${cells})`
         sketchpad.appendChild(square);
     }
 }
 
-createDivs(256);
+createCells(16);
