@@ -1,13 +1,20 @@
+"use strict";
+
 const sketchpad = document.querySelector('.sketchpad');
 
+// Creates the cells in the sketchpad
 function createCells(cells) {
     for (let div = 1; div <= cells * cells; div++) {
-        const square = document.createElement('div');
-        
-        square.textContent = "hello";
-        square.classList.add('cell');
-        square.style.width = `calc(100% / ${cells})`
-        sketchpad.appendChild(square);
+        const cell = document.createElement('div');
+
+        cell.classList.add('cell');
+        cell.style.width = `calc(100% / ${cells})`
+        sketchpad.appendChild(cell);
+
+        // Changes backgrounsd colour when a cell is hovered over
+        cell.addEventListener('mouseover', () => {
+            cell.style.backgroundColor = "black";
+        });
     }
 }
 

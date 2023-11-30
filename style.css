@@ -33,7 +33,4 @@ body {
     flex-shrink: 0;
 }
 
-.sketchpad .cell {
-    /* border: 1px solid black; */
-    background-color: yellow;
-}
+/* .sketchpad .cell {} */
