@@ -8,13 +8,13 @@ A browser version of etch-a-sketch created with JavaScript
 
 - When the mouse is hovered over the sketchpad, colour will begin to fill it. You can change the mode by selecting one of the buttons, use the eraser to clear any previous lines created, or clear the sketchpad entirely and start from scratch. You can also change the size of the sketchpad by increasing or decreasing the slider that is located underneath the buttons.
 
-## Colour Mode
+## Black Colour
 
-- The `Colour mode` button when pressed sets the colour to black. When the mouse hovers over the sketchpad, a black trail will follow it.
+- The `Black` button when pressed sets the colour to black. When the mouse hovers over the sketchpad, a black trail will follow it.
 
-## Rainbow Mode
+## Rainbow Colour
 
-- The `Rainbow mode` button when pressed sets the colour to a random RBG value. When the mouse hovers over the sketchpad, a RGB value will be chosen at random and a trail will follow the mouse.
+- The `Rainbow` button when pressed sets the colour to a random RBG value. When the mouse hovers over the sketchpad, a RGB value will be chosen at random and a trail will follow the mouse.
 
 ## Eraser
 

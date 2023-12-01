@@ -1,7 +1,7 @@
 "use strict";
 
 const sketchpad = document.querySelector('.sketchpad');
-const colourBtn = document.querySelector('.colour-btn');
+const blackBtn = document.querySelector('.black-btn');
 const rainbowBtn = document.querySelector('.rainbow-btn');
 const eraserBtn = document.querySelector('.eraser-btn');
 const clearBtn = document.querySelector('.clear-btn');
@@ -36,8 +36,8 @@ function updateCells() {
 }
 
 // Sets the colour to black
-function colourMode() {
-    colourBtn.addEventListener('click', () => {
+function blackMode() {
+    blackBtn.addEventListener('click', () => {
         const cells = document.querySelectorAll('.cell');
         cells.forEach((cell) => {
             cell.addEventListener('mouseover', () => {
@@ -91,7 +91,7 @@ function clearSketchpad() {
 
 createCells(16);
 updateCells();
-colourMode();
+blackMode();
 rainbowMode();
 eraseLines();
 clearSketchpad();
