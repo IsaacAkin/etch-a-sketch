@@ -5,9 +5,14 @@ const colourBtn = document.querySelector('.colour-btn');
 const rainbowBtn = document.querySelector('.rainbow-btn');
 const eraserBtn = document.querySelector('.eraser-btn');
 const clearBtn = document.querySelector('.clear-btn');
+const sliderValue = document.querySelector('.slider-value');
+const rangeSlider = document.querySelector('.range-slider');
 
 // Creates the cells in the sketchpad
 function createCells(cells) {
+    sketchpad.textContent = "";
+    sliderValue.textContent = `${cells} x ${cells}`;
+
     for (let div = 1; div <= cells * cells; div++) {
         const cell = document.createElement('div');
 
@@ -20,6 +25,14 @@ function createCells(cells) {
             cell.style.backgroundColor = "black";
         });
     }
+}
+
+// Generates new cells based on the sliders value
+function updateCells() {
+    rangeSlider.addEventListener('input', (e) => {
+        const cells = e.target.value;
+        createCells(cells);
+    });
 }
 
 // Sets the colour to black
@@ -77,6 +90,7 @@ function clearSketchpad() {
 }
 
 createCells(16);
+updateCells();
 colourMode();
 rainbowMode();
 eraseLines();
