@@ -14,8 +14,7 @@ body {
     /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 7em;
+    justify-content: space-evenly;
 }
 
 .sketchpad-controls {
@@ -28,7 +27,6 @@ body {
 
 .sketchpad-controls button {
     border: 1px solid black;
-    background-color: whitesmoke;
     border-radius: 5px;
     font-size: large;
     width: 170px;
@@ -62,4 +60,4 @@ body {
     text-align: center;
 }
 
-/* .range-slider {} */
+.range-slider {}
